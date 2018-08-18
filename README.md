@@ -76,6 +76,7 @@ $placeholders = [
 echo __n('One cookie remaining', '%numOfCookies% cookies remaining', $count, $placeholders);
 // Остало је 3 колача
 ```
+This example assumes you have your locales installed and you already called `setlocale()`, `bindtextdomain()` and `textdomain()`.
 
 ## Generate POT files
 1. Navigate to the folder where `xgetcontext.sh` is located at
