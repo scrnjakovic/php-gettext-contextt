@@ -78,7 +78,7 @@ echo __n('One cookie remaining', '%numOfCookies% cookies remaining', $count, $pl
 ```
 
 ## Generate POT files
-1. Navigate to the folder where xgetcontext.sh is located at
+1. Navigate to the folder where `xgetcontext.sh` is located at
 2. Make sure `xgetcontext.sh` can be executed with `chmod +x xgetcontext.sh`
 3. Execute the script with the arguments you would normally pass to `xgettext`, for an example:
 ```
