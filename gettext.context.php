@@ -78,7 +78,7 @@ function __p(string $msgCtxt, string $msgId, array $placeholders = null) : strin
     $ctxtString = "{$msgCtxt}\004{$msgId}";
     
     // we can't implement it like in gettext.h because of PHP's implementation of dcgettext
-    // in which dcgettext requires a domain, whereas in native gcgettext domain can be null
+    // in which dcgettext requires a domain, whereas in native dcgettext domain can be null
     // so we go with gettext instead
     $translation = gettext($ctxtString);
     
@@ -105,7 +105,7 @@ function __dp(string $domain, string $msgCtxt, string $msgId, array $placeholder
     $ctxtString = "{$msgCtxt}\004{$msgId}";
     
     // we can't implement it like in gettext.h because of PHP's implementation of dcgettext
-    // in which dcgettext requires a domain, whereas in native gcgettext domain can be null
+    // in which dcgettext requires a domain, whereas in native dcgettext domain can be null
     // so we go with dgettext instead
     $translation = dgettext($domain, $ctxtString);
     
